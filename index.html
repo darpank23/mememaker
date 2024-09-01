@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Meme Maker</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1> Create your Memes </h1>
+    </div>
+
+
+    <div id="content">
+
+      <div id="pictureFrame">
+        <p id="topText"></p>
+        <p id="bottomText"></p>
+      </div>
+
+      <div id="editor">
+
+        <div id="section1"> 
+          <label for="pictureList"> <strong>Choose The Image:</strong> </label>
+
+          <select id="pictureList">
+            <option value="1.jpg"> Michael Jordan Crying </option>
+            <option value="2.jpg"> Rap Battle Dude </option>
+            <option value="3.jpg"> Nick Young Confused </option>            
+          </select>       
+          <br>
+          <label for="upload"><strong>Choose Image From the File</strong> </label>
+          <input id="upload" type="file">
+        </div> 
+
+        <div id="section2">      
+          <label for="topTextBox"> <strong>Text on the Top :</strong> </label>          
+          <input id="topTextBox" type="text" placeholder="Enter the top text">
+          <input id="topColor" type="color" value="#ffffff">
+
+          <label for="topFont"> Font Size: </label>
+          <input id="topFont" type="range" min="10" max="100" value="30">
+
+          <br>
+          <label for="bTextBox"> <strong>Text on the Bottom :</strong> </label>          
+          <input id="bottomTextBox" type="text" placeholder="Enter the Bottom text">
+          <input id="bottomColor" type="color" value="#ffffff">
+
+          <label for="bottomFont"> Font Size: </label>
+          <input id="bottomFont" type="range" min="10" max="100" value="30">
+          <br> 
+          <br>
+          <button id="meme-generate">Generate Meme</button>
+
+        </div>  
+      </div>  
+    </div>
+    <br>
+
+    <div id="footer">
+      <h1> Have Fun making the Memes</h1>
+      <h1> Designed by Darpan Khanna </h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
